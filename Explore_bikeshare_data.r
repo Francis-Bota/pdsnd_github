@@ -39,7 +39,7 @@ ggplot(aes(x=Gender, fill=User.Type), data=bShare) +
     theme(text = element_text(size = 20)) +
     ggtitle("Count of User Types Across Gender") + xlim("Male","Female")
 
-ggplot(bShare, aes(x = factor(Gender), y = Trip.Duration)) + 
+ggplot(bShare, aes(x = factor(Gender), y = Trip.Duration)) +
   geom_histogram(stat = "summary", fun = "mean", width=0.3) + labs(title="Average Trip Duration Across Genders") + xlab("Gender") + xlim("Male", "Female")
 
 ggplot(aes(x=Birth.Year, fill=City), data=bShare) +
