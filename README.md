@@ -5,7 +5,7 @@
 Insights from BikeShare Data provided by [Motivate](https://www.motivateco.com/)
 
 ### Description
-This project uses bikeshare data collected across three cities to uncover usage patterns
+This project uses bikeshare data collected across three cities to uncover usage patterns. The analysis is done on randomly selected data for the first six months of 2017 are provided for Chicago, New York and Washington.
 
 ### Files used
 Analysis is based on three csv files containing bikeshare data from Chicago, New York and Washington provided by [Motivate](https://www.motivateco.com/)
