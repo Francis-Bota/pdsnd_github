@@ -1,17 +1,15 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+20th September 2021
 
 ### Project Title
-Replace the Project Title
+Insights from BikeShare Data provided by [Motivate](https://www.motivateco.com/)
 
 ### Description
-Describe what your project is about and what it does
+This project uses bikeshare data collected across three cities to uncover usage patterns
 
 ### Files used
-Include the files used
+Analysis is based on three csv files containing bikeshare data from Chicago, New York and Washington provided by [Motivate](https://www.motivateco.com/)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+[Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)
+[Exploratory Data Analysis in R for Beginners](https://towardsdatascience.com/exploratory-data-analysis-in-r-for-beginners-fe031add7072)
