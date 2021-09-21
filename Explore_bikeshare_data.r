@@ -23,32 +23,32 @@ tBind<-function(d1,d2,d3){
     b2
 }
 
-bShare<-tBind(ny,wash,chi)
+shareData<-tBind(ny,wash,chi)
 
 #Converting Trip duration from seconds to minutes
-bShare$Trip.Duration<-bShare$Trip.Duration/60
+shareData$Trip.Duration<-shareData$Trip.Duration/60
 
-head(bShare)
+head(shareData)
 
-summary(bShare)
+summary(shareData)
 
 #Plot of the number of User types across Gender
 library(ggplot2)
-ggplot(aes(x=Gender, fill=User.Type), data=bShare) +
+ggplot(aes(x=Gender, fill=User.Type), data=shareData) +
     geom_bar(position='dodge') +
     theme(text = element_text(size = 20)) +
     ggtitle("Count of User Types Across Gender") + xlim("Male","Female")
 
-ggplot(bShare, aes(x = factor(Gender), y = Trip.Duration)) + 
+ggplot(shareData, aes(x = factor(Gender), y = Trip.Duration)) +
   geom_histogram(stat = "summary", fun = "mean", width=0.3) + labs(title="Average Trip Duration Across Genders") + xlab("Gender") + xlim("Male", "Female")
 
-ggplot(aes(x=Birth.Year, fill=City), data=bShare) +
+ggplot(aes(x=Birth.Year, fill=City), data=shareData) +
     geom_bar(position='dodge') +
     ggtitle("Birth Year of bikers") +
     scale_x_continuous(breaks = seq(1900, 2002, by = 10)) +
     labs(x = "Birth Year of bikers")
 
-ggplot(aes(x=Birth.Year, y=Trip.Duration), data=bShare) +
+ggplot(aes(x=Birth.Year, y=Trip.Duration), data=shareData) +
   xlim(1970, 2002) +
   geom_point(alpha=0.05, position = position_jitter(h=0)) +
   coord_trans(y='sqrt') +
